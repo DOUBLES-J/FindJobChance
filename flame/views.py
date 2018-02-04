@@ -87,7 +87,8 @@ def login(request):
 # 登出
 def logout(request):
     auth.logout(request)
-    return HttpResponseRedirect(request, 'flame/login.html')
+    # return HttpResponseRedirect(request, 'flame/login.html')
+    return HttpResponseRedirect('/flame/login')
 
 
 # 注册
